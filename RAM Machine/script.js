@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
 let LN = 1
 
 function dodajElement() {
+
+    const opcje = [
+        'load', 'store', 'read', 'write', 'add', 'sub', 'mult', 'div', 'jump', 'jgzt'
+    ]
     let tabela = document.getElementById("tabelaProgram");
 
     let row = tabela.insertRow();
@@ -17,8 +21,18 @@ function dodajElement() {
     let cell5 = row.insertCell();
 
     cell1.innerHTML = LN;
-    cell2.innerHTML = "<input id='element' type='text'></input>";
-    cell3.innerHTML = "<input id='element' type='text'></input>";
+    cell2.innerHTML = "<input id='lave' type='text'></input>";
+
+    selectElement = document.createElement("select");
+    cell3.appendChild(selectElement);
+
+    opcje.forEach(opcja => {
+        optionElement = document.createElement("option");
+        optionElement.innerHTML = opcja;
+        selectElement.appendChild(optionElement);
+
+    });
+
     cell4.innerHTML = "<input id='element' type='text'></input>";
     cell5.innerHTML = "<input id='element' type='text'></input>";
     LN++
@@ -38,5 +52,9 @@ function memory(){
         cell2.innerHTML = "<input id='element' type='text'></input>";
         address++;
     }
+}
+
+function load(){
+    
 }
 

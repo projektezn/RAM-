@@ -1,21 +1,26 @@
 Konrad: 
-wystylizowanie interfejsu 
-Load a
-STORE X
-STORE ^x
-ADD a
+
+✔️ Wystylizowanie interfejsu 
+▫️ Load a
+▫️ STORE X
+▫️ STORE ^x
+▫️ ADD a
+▫️ Kontrolka pamieci 
 
 Michał:
 
-SUB a
-Mult a
-DIV a
-READ x
-animacje
+▫️ SUB a
+▫️ Mult a
+▫️ DIV a
+▫️ READ x
+▫️ przycisk zapisu i wczytywania
+▫️ kontrolka procesora
 
-Wiktor:
-Read ^x
-WRITE X
-JUMP e
-JGTZ e 
-animcje
+Wiktor
+
+▫️ Read ^x:
+▫️ WRITE X
+▫️ JUMP e
+▫️ JGTZ e 
+▫️ animacje
+▫️ kontrolka taśmy wejściowej i wyjsciowej

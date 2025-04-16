@@ -1,0 +1,21 @@
+Konrad: 
+wystylizowanie interfejsu 
+Load a
+STORE X
+STORE ^x
+ADD a
+
+Michał:
+
+SUB a
+Mult a
+DIV a
+READ x
+animacje
+
+Wiktor:
+Read ^x
+WRITE X
+JUMP e
+JGTZ e 
+animcje

@@ -1,0 +1,9 @@
+Konrad: 
+Pole procesor oraz pamięci
+
+Michał: 
+Górny oraz dolny pasek + animacje w css
+
+Wiktor: 
+Pole programu 
+funkcjonalność 

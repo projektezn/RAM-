@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section id="lewyPasek">
+        <h1>PROCESOR</h1>
+        <p>Instruction:<input type="text" readonly></p>
+        <p>Argument:<input type="text" readonly></p>
+        <section id="memory">
+            <h1>MEMORY</h1>
+            <table id="tabelaMemory">
+                <tr>
+                    <th>Addresses</th>
+                    <th>Value</th>
+                </tr>
+            </table>
+        </section>
+    </section>
+    <section id="programGUI">
+        <div id="gornyPasek">
+            <button id="scrollLeft">◀-</button>
+            <div id="pasekContainer">
+                <table id="tabelaPasekGorny">
+                    <tr id="headers"></tr>
+                    <tr id="data"></tr>
+                </table>
+            </div>
+            <button id="scrollRight">-▶</button>
+        </div>
+
+        <h1>PROGRAM</h1>
+        <input type="button" value="Dodaj element" onclick="dodajElement()">
+        <table id="tabelaProgram">
+            <tr>
+                <th>LN</th>
+                <th>Label</th>
+                <th>Instruction</th>
+                <th>Argument</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><input type="text"></td>
+                <td>
+                    <select>
+                        <option>load</option>
+                        <option>store</option>
+                        <option>read</option>
+                        <option>write</option>
+                        <option>add</option>
+                        <option>sub</option>
+                        <option>mult</option>
+                        <option>div</option>
+                        <option>jump</option>
+                        <option>jgzt</option>
+                    </select>
+                </td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+
+        <div id="dolnyPasek">
+            <button id="scrollLeftDolny">◀-</button>
+            <div id="pasekContainerDolny">
+                <table id="tabelaPasekDolny">
+                    <tr id="headersDolny"></tr>
+                    <tr id="dataDolny"></tr>
+                </table>
+            </div>
+            <button id="scrollRightDolny">-▶</button>
+        </div>
+    </section>
+</body>
+</html>

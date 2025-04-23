@@ -74,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
       let input = document.createElement("input");
       input.type = "text";
       input.id = "a" + i;
-      input.readOnly = true;
       td.appendChild(input);
       data.appendChild(td);
     }
@@ -98,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function() {
       let input = document.createElement("input");
       input.type = "text";
       input.id = "b" + i;
-      input.readOnly = true;
       td.appendChild(input);
       data.appendChild(td);
     }

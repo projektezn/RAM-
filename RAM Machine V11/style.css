@@ -231,3 +231,8 @@ input[type="text"]:focus {
     transform: translateY(0);
     box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
+
+.breakpoint-row {
+    background-color: #fff3cd !important;
+    border-left: 4px solid #f87171;
+}

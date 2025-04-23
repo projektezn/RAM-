@@ -387,20 +387,49 @@ function disableBreakpointMode() {
 
 function toggleBreakpoint(event) {
   const row = event.currentTarget;
-
-  if (row.classList.contains("breakpoint-row")) {
-    row.classList.remove("breakpoint-row");
-  } else {
-    row.classList.add("breakpoint-row");
-  }
+  row.classList.toggle("breakpoint-row");
 }
-//   stop on breakpoint
 
+// Dodaj do każdej nowo tworzonej linii możliwość ustawienia breakpointu
+function dodajElement() {
+  const opcje = ['load', 'store', 'read', 'write', 'add', 'sub', 'mult', 'div', 'jump', 'jgzt'];
+  let tabela = document.getElementById("tabelaProgram");
+  let row = tabela.insertRow();
+
+  let cell1 = row.insertCell();
+  let cell2 = row.insertCell();
+  let cell3 = row.insertCell();
+  let cell4 = row.insertCell();
+  let cell5 = row.insertCell();
+
+  cell1.innerHTML = LN;
+  cell2.innerHTML = "<input type='text'>";
+
+  let selectElement = document.createElement("select");
+  opcje.forEach(opcja => {
+    let optionElement = document.createElement("option");
+    optionElement.innerHTML = opcja;
+    selectElement.appendChild(optionElement);
+  });
+  cell3.appendChild(selectElement);
+
+  cell4.innerHTML = "<input type='text'>";
+  cell5.innerHTML = "<input type='text'>";
+
+  if (breakpointMode) {
+    row.addEventListener("click", toggleBreakpoint);
+  }
+
+  LN++;
+}
+
+// ==== stop on breakpoint ====
+
+document.getElementById("runBreakpoint").addEventListener("click", runUntilBreakpoint);
 
 function runUntilBreakpoint() {
   const tabela = document.getElementById("tabelaProgram");
-  document.getElementById("runBreakpoint").addEventListener("click", runUntilBreakpoint);
-  
+
   for (let i = 1; i < tabela.rows.length; i++) {
     const row = tabela.rows[i];
 
@@ -410,7 +439,7 @@ function runUntilBreakpoint() {
 
     console.log(`Executing line ${i - 1}: ${instruction} ${argument}`);
 
-    // Tu normalnie wykonałbyś instrukcję
+    // Tu można dodać wykonanie instrukcji, np.
     // executeInstruction(instruction, argument);
 
     // Sprawdzenie czy jest breakpoint
@@ -420,3 +449,4 @@ function runUntilBreakpoint() {
     }
   }
 }
+

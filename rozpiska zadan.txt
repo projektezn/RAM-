@@ -1,11 +1,13 @@
 Konrad: 
 
 ✔️ Wystylizowanie interfejsu 
-▫️ Load a
+✔️ Load a
 ▫️ STORE X
 ▫️ STORE ^x
 ▫️ ADD a
-▫️ Kontrolka pamieci 
+▫️ kontrolka procesora
+▫️ start program/stop program
+▫️ run one step
 
 Michał:
 
@@ -13,8 +15,10 @@ Michał:
 ▫️ Mult a
 ▫️ DIV a
 ▫️ READ x
-▫️ przycisk zapisu i wczytywania
-▫️ kontrolka procesora
+▫️/✔️ przycisk zapisu i wczytywania
+✔️ kontrolka taśmy wejściowej i wyjsciowej
+▫️ start program/stop program
+▫️ set breakpiont
 
 Wiktor
 
@@ -23,4 +27,6 @@ Wiktor
 ▫️ JUMP e
 ▫️ JGTZ e 
 ▫️ animacje
-▫️ kontrolka taśmy wejściowej i wyjsciowej
+▫️ veryikacja programu
+▫️ start program/stop program
+▫️ pause at breakpiont

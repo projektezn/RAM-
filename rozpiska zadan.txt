@@ -1,32 +1,30 @@
-Konrad: 
-
 ✔️ Wystylizowanie interfejsu 
 ✔️ Load a
 ▫️ STORE X
 ▫️ STORE ^x
-▫️ ADD a
-▫️ kontrolka procesora
-▫️ start program/stop program
-▫️ run one step
+▫️ READ x
+✔️ kontrolka procesora
+✔️ start program/stop program
+✔️ run one step
 
 Michał:
 
 ▫️ SUB a
 ▫️ Mult a
 ▫️ DIV a
-▫️ READ x
-▫️/✔️ przycisk zapisu i wczytywania
+▫️ ADD a
+✔️ przycisk zapisu i wczytywania
 ✔️ kontrolka taśmy wejściowej i wyjsciowej
-▫️ start program/stop program
-▫️ set breakpiont
+✔️ start program/stop program
+✔️ set breakpoint
+✔️ pause at breakpiont
 
 Wiktor
 
-▫️ Read ^x:
-▫️ WRITE X
-▫️ JUMP e
-▫️ JGTZ e 
+✔️ Read ^x:
+✔️ WRITE X
+✔️ UMP e
+✔️ JGTZ e 
 ▫️ animacje
 ▫️ veryikacja programu
-▫️ start program/stop program
-▫️ pause at breakpiont
+✔️ start program/stop program

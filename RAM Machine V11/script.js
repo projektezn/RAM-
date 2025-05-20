@@ -390,7 +390,7 @@ function toggleBreakpoint(event) {
   row.classList.toggle("breakpoint-row");
 }
 
-// Dodaj do każdej nowo tworzonej linii możliwość ustawienia breakpointu
+
 function dodajElement() {
   const opcje = ['load', 'store', 'read', 'write', 'add', 'sub', 'mult', 'div', 'jump', 'jgzt'];
   let tabela = document.getElementById("tabelaProgram");
@@ -433,16 +433,12 @@ function runUntilBreakpoint() {
   for (let i = 1; i < tabela.rows.length; i++) {
     const row = tabela.rows[i];
 
-    // Symulacja pobrania instrukcji i argumentu
     const instruction = row.cells[2].querySelector("select")?.value;
     const argument = row.cells[3].querySelector("input")?.value;
 
     console.log(`Executing line ${i - 1}: ${instruction} ${argument}`);
 
-    // Tu można dodać wykonanie instrukcji, np.
-    // executeInstruction(instruction, argument);
 
-    // Sprawdzenie czy jest breakpoint
     if (row.classList.contains("breakpoint-row")) {
       console.log(`Breakpoint at line ${i - 1}. Pausing.`);
       break;

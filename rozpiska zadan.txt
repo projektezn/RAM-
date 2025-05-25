@@ -1,8 +1,8 @@
 ✔️ Wystylizowanie interfejsu 
 ✔️ Load a
-▫️ STORE X
-▫️ STORE ^x
-▫️ READ x
+✔️ STORE X
+✔️ STORE ^x
+✔️ READ x
 ✔️ kontrolka procesora
 ✔️ start program/stop program
 ✔️ run one step

@@ -370,31 +370,36 @@ document.getElementById("loadProgram").addEventListener("click", function () {
         }
         break;
 
-    case "add":
-        if (!isNaN(adres)) {
-            memory[0].value = parseFloat(memory[0].value) + parseFloat(memory[adres].value || 0);
-        }
-        break;
-
-    case "sub":
-        if (!isNaN(adres)) {
-            memory[0].value = parseFloat(memory[0].value) - parseFloat(memory[adres].value || 0);
-        }
-        break;
-
-    case "mult":
-        if (!isNaN(adres)) {
-            memory[0].value = parseFloat(memory[0].value) * parseFloat(memory[adres].value || 0);
-        }
-        break;
-
-    case "div":
-        if (!isNaN(adres) && parseFloat(memory[adres].value) !== 0) {
-            memory[0].value = Math.floor(parseFloat(memory[0].value) / parseFloat(memory[adres].value));
-        } else {
-            console.warn("Dzielenie przez zero lub nieprawidłowy adres");
-        }
-        break;
+        case "add":
+          if (!isNaN(adres)) {
+              let valueToAdd = parseFloat(memory[adres].value) || 0; 
+              memory[0].value = parseFloat(memory[0].value) + valueToAdd;
+          }
+          break;
+      
+      case "sub":
+          if (!isNaN(adres)) {
+              let valueToSubtract = parseFloat(memory[adres].value) || 0; 
+              memory[0].value = parseFloat(memory[0].value) - valueToSubtract;
+          }
+          break;
+      
+      case "mult":
+          if (!isNaN(adres)) {
+              let valueToMultiply = parseFloat(memory[adres].value) || 0;
+              memory[0].value = parseFloat(memory[0].value) * valueToMultiply;
+          }
+          break;
+      
+      case "div":
+          if (!isNaN(adres) && parseFloat(memory[adres].value) !== 0) {
+              let valueToDivide = parseFloat(memory[adres].value);
+              memory[0].value = Math.floor(parseFloat(memory[0].value) / valueToDivide);
+          } else {
+              console.warn("Dzielenie przez zero lub nieprawidłowy adres");
+          }
+          break;
+      
 
 
 

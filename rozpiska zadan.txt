@@ -9,10 +9,10 @@
 
 Michał:
 
-▫️ SUB a
-▫️ Mult a
-▫️ DIV a
-▫️ ADD a
+✔️ SUB a
+✔️ Mult a
+✔️ DIV a
+✔️ ADD a
 ✔️ przycisk zapisu i wczytywania
 ✔️ kontrolka taśmy wejściowej i wyjsciowej
 ✔️ start program/stop program
@@ -28,3 +28,4 @@ Wiktor
 ▫️ animacje
 ▫️ veryikacja programu
 ✔️ start program/stop program
+✔️ jzero

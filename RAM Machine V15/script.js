@@ -370,23 +370,27 @@ function Uruchom() {
       }
       break;
 
-  case "add":
-      if (!isNaN(adres)) {
-          memory[0].value = parseFloat(memory[0].value) + parseFloat(memory[adres].value || 0);
-      }
-      break;
-
-  case "sub":
-      if (!isNaN(adres)) {
-          memory[0].value = parseFloat(memory[0].value) - parseFloat(memory[adres].value || 0);
-      }
-      break;
-
-  case "mult":
-      if (!isNaN(adres)) {
-          memory[0].value = parseFloat(memory[0].value) * parseFloat(memory[adres].value || 0);
-      }
-      break;
+        case "add":
+          if (!isNaN(adres)) {
+              let valueToAdd = parseFloat(memory[adres].value) || 0; 
+              memory[0].value = parseFloat(memory[0].value) + valueToAdd;
+          }
+          break;
+      
+      case "sub":
+          if (!isNaN(adres)) {
+              let valueToSubtract = parseFloat(memory[adres].value) || 0; 
+              memory[0].value = parseFloat(memory[0].value) - valueToSubtract;
+          }
+          break;
+      
+      case "mult":
+          if (!isNaN(adres)) {
+              let valueToMultiply = parseFloat(memory[adres].value) || 0;
+              memory[0].value = parseFloat(memory[0].value) * valueToMultiply;
+          }
+          break;
+      
 
   case "div":
       if (!isNaN(adres) && parseFloat(memory[adres].value) !== 0) {
